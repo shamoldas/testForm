@@ -1,0 +1,13 @@
+CREATE TABLE form (
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(50) NOT NULL ,
+    org text ,
+    street VARCHAR(250) ,
+    city VARCHAR(250) ,
+    mobile VARCHAR(250) ,
+    email VARCHAR(50) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    license_key varchar(100),
+    expired_date DATETIME,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);

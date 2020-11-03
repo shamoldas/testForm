@@ -1,0 +1,11 @@
+create table license
+(
+key_id int primary key auto_increment,
+user varchar(50),
+license_key varchar(50),
+paid_fee int not null,
+due_fee int not null,
+paid_date date not null,
+u_id int not null,
+foreign key(u_id) references form(id)    
+);
